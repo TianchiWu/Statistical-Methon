@@ -15,7 +15,7 @@ def over():
     output_dir = r"C:\Users\JackWu\Desktop\output"
 
     for i in range(len(filename)):
-        video_path = filepath + '\\' +filename[i]
+        video_path = filepath + '\\' + filename[i]
         radio_path = output_dir + '\\' + filename[i][0:2] + '.mp3'
         video_to_radio(video_path,radio_path)
 
