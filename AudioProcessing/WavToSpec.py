@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 
 # 此处的Url中必须使用斜杠而不是Windows自带的反斜杠
-parent_dir = 'D:/dataset/WAV'
+parent_dir = "C:/Users/JackWu/Desktop/测试"
 res_dir = "D:/dataset/Spec"
 
 

@@ -1,5 +1,5 @@
 from moviepy.editor import *
-
+import re
 
 def video_to_radio(video_path,audio_path):
     video = VideoFileClip(video_path)
@@ -12,11 +12,11 @@ def over():
     os.chdir(filepath)
     filename = os.listdir(filepath)
 
-    output_dir = r"C:\Users\JackWu\Desktop\output"
+    output_dir = r"D:\dataset\WAV" # 输出的路径
 
     for i in range(len(filename)):
         video_path = filepath + '\\' + filename[i]
-        radio_path = output_dir + '\\' + filename[i][0:2] + '.mp3'
+        radio_path = output_dir + '\\' + filename[i][:-4] + '.wav'
         video_to_radio(video_path,radio_path)
 
 if __name__=='__main__':
